@@ -5,7 +5,7 @@ import java.util.*;
 public class ThreeSum {
 
     public static void main(String[] args) {
-        int[] nums = {-1,0,1,2,-1,-4};
+        int[] nums = {-2,0,0,2,2};
         System.out.println(threeSum(nums));
     }
 
@@ -13,17 +13,22 @@ public class ThreeSum {
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);
         for (int i = 0; i < nums.length; i++) {
-            if(nums.length == 1 && nums[i] == 0) break;
+            if(i > 0 && nums[i] == nums[i-1]) continue;
             int target = 0 - nums[i], x = i + 1, y = nums.length - 1;
             while (x < y) {
                 if (nums[x] + nums[y] == target) {
-                    List<Integer> arrayList = new LinkedList<>();
+                    List<Integer> arrayList = new ArrayList<>();
                     arrayList.add(nums[i]);
                     arrayList.add(nums[x]);
                     arrayList.add(nums[y]);
-                    if (list.indexOf(arrayList) < 0)
-                        list.add(arrayList);
+                    list.add(arrayList);
                     y--;x++;
+                    while (x < y && nums[x] == nums[x - 1]) {
+                        x++;
+                    }
+                    while (x < y && nums[y] == nums[y + 1]) {
+                        y--;
+                    }
                 }else if(nums[x] + nums[y] > target){
                     y--;
                 }else{
