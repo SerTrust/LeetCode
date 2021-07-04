@@ -20,7 +20,7 @@ public class Search {
                     start = median+1;
                 }
             }else{
-                if(nums[median] <= target && target <= nums[end]){
+                if(nums[median] < target && target <= nums[end]){
                     start = median+1;
                 }else{
                     end = median-1;
