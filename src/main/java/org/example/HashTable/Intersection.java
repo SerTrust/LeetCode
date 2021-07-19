@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Intersection {
-
+//  349. Intersection of Two Arrays
     public static void main(String[] args) {
         int[] nums1 = {1,2,2,1}, nums2 = {2,2};
         System.out.println(Arrays.toString(intersection(nums1, nums2)));

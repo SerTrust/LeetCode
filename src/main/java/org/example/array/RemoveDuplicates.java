@@ -1,7 +1,7 @@
 package org.example.array;
 
 public class RemoveDuplicates {
-
+//  26. Remove Duplicates from Sorted Array
     public static void main(String[] args) {
         int[] nums = {1,1,2};
         System.out.println(removeDuplicates(nums));

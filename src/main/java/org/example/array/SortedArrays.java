@@ -2,10 +2,8 @@ package org.example.array;
 
 import java.util.stream.IntStream;
 
-/**
- * Median of Two Sorted Arrays
- */
 public class SortedArrays {
+//  4. Median of Two Sorted Arrays
     public static void main(String[] args) {
         int[] nums1 = {1,3};
         int[] nums2 = {2,4};

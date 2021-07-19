@@ -1,7 +1,7 @@
 package org.example.HashTable;
 
 public class CanConstruct {
-
+//  383. Ransom Note
     public static void main(String[] args) {
         String ransomNote = "aa", magazine = "aab";
         System.out.println(canConstruct(ransomNote, magazine));

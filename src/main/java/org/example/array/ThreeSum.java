@@ -3,7 +3,7 @@ package org.example.array;
 import java.util.*;
 
 public class ThreeSum {
-
+//  15. 3Sum
     public static void main(String[] args) {
         int[] nums = {-2,0,0,2,2};
         System.out.println(threeSum(nums));

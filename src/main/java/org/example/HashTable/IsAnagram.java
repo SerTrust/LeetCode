@@ -1,7 +1,7 @@
 package org.example.HashTable;
 
 public class IsAnagram {
-
+//  242. Valid Anagram
     public static void main(String[] args) {
         String s = "anagram", t = "nagaram";
         System.out.println(isAnagram(s, t));

@@ -3,7 +3,7 @@ package org.example.array;
 import java.util.Arrays;
 
 public class SearchRange {
-
+//  34. Find First and Last Position of Element in Sorted Array
     public static void main(String[] args) {
         int[] nums = {2,2};
         int[] result = searchRange(nums, 2);

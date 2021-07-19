@@ -1,7 +1,7 @@
 package org.example.array;
 
 public class RemoveElement {
-
+//  27. Remove Element
     public static void main(String[] args) {
         int[] nums = {3,2,2,3};
         System.out.println(removeElement(nums, 2));

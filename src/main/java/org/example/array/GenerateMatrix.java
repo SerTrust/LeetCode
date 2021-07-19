@@ -1,9 +1,7 @@
 package org.example.array;
 
-import java.util.Arrays;
-
 public class GenerateMatrix {
-
+//  59. Spiral Matrix II
     public static void main(String[] args) {
         int num = 3;
         int[][] ints = generateMatrix(num);
