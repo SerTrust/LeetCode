@@ -8,6 +8,8 @@ public class DivideTwoIntegers {
         System.out.println(divide(a, b));
     }
 
+//    Runtime: 1 ms, faster than 100.00% of Java online submissions for Divide Two Integers.
+//    Memory Usage: 36.2 MB, less than 59.49% of Java online submissions for Divide Two Integers.
     public static int divide(int dividend, int divisor) {
         boolean isNegative = false;
         long result = 0;
