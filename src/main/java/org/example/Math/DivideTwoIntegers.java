@@ -39,27 +39,4 @@ public class DivideTwoIntegers {
             return result >= Integer.MAX_VALUE ? Integer.MAX_VALUE : (int)result;
         }
     }
-
-    public int divide2(int dividend, int divisor) {
-        if(dividend == Integer.MIN_VALUE && divisor == -1)
-            return Integer.MAX_VALUE;
-        long result = 0;
-        int flag = ((dividend > 0) ^ (divisor > 0)) ? 1 : -1;
-        long dvd = dividend;
-        long dvs = divisor;
-        dvd = Math.abs(dvd);
-        dvs = Math.abs(dvs);
-        while(dvd >= dvs) {
-            long temp = dvs;
-            int shiftTime = 0;
-            while(dvd >= temp << 1) {
-                temp = temp << 1;
-                shiftTime ++;
-            }
-            result += Math.pow(2, shiftTime);
-            dvd -= temp;
-        }
-        return (int) ((flag == 1) ? (-1) * result : result);
-    }
-
 }
